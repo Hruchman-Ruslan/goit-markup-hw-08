@@ -61,6 +61,13 @@
                     +38 096 111 11 11</a>
             </li>
         </ul>
+
+        <!-- menu-block -->
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg class="menu-open__icon" width="40" height="40">
+              <use href="./images/icons.svg#icon-menu-open"></use>
+            </svg>
+        </button>
         </div>
     </header>
     <!-- Header-block -->
@@ -83,7 +90,7 @@
             <ul class="features__list">
                 <li class="features__item">
                     <div class="features__icons">
-                        <svg class="features-icon" width="70" height="70" aria-label="іконка супутникової антени">
+                        <svg class="features__icon" width="70" height="70" aria-label="іконка супутникової антени">
                             <use href="./images/icons.svg#icon-antenna"></use>
                         </svg>
                     </div>
@@ -114,7 +121,7 @@
                             <use href="./images/icons.svg#icon-astronaut"></use>
                         </svg>
                     </div>
-                    <h3 class="features__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                    <h3 class="feature__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
                     <p class="feature__text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
                 </li>
             </ul>
@@ -154,7 +161,7 @@
                 <h2 class="team__subject">Наша команда</h2>
             <ul class="team__list">
                 <li class="team__item">
-                    <img width="270" height="260" src="./images/portrait-1.jpg" alt="Мужик в окулярах">
+                    <img width="450" height="460" src="./images/portrait-1.jpg" alt="Мужик в окулярах">
                     <div class="team__subtitle">
                     <h3 class="team__title">Ігор Дем'яненко</h3>
                     <p class="team__text">Product Designer</p>
@@ -183,7 +190,7 @@
                     </div> 
                 </li>
                 <li class="team__item">
-                    <img width="270" height="260" src="./images/portrait-2.jpg" alt="Жінка в окулярах">
+                    <img width="450" height="460" src="./images/portrait-2.jpg" alt="Жінка в окулярах">
                     <div class="team__subtitle">
                     <h3 class="team__title">Ольга Рєпіна</h3>
                     <p class="team__text">Frontend Developer</p>
@@ -216,7 +223,7 @@
                     </div>
                 </li>
                 <li class="team__item">
-                    <img width="270" height="260" src="./images/portrait-3.jpg" alt="Мужик">
+                    <img width="450" height="460" src="./images/portrait-3.jpg" alt="Мужик">
                     <div class="team__subtitle">
                     <h3 class="team__title">Микола Тарасов</h3>
                     <p class="team__text">Marketing</p>
@@ -249,7 +256,7 @@
                     </div> 
                 </li>
                 <li class="team__item">
-                    <img width="270" height="260" src="./images/portrait-4.jpg" alt="Мужик в окулярах">
+                    <img width="450" height="460" src="./images/portrait-4.jpg" alt="Мужик в окулярах">
                     <div class="team__subtitle">
                     <h3 class="team__title">Михайло Єрмаков</h3>
                     <p class="team__text">UI Designer</p>
@@ -445,8 +452,75 @@
             </div>
         </div>
 
+        <!-- Menu-block -->
+        <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="menu-toggle js-close-menu">
+                <svg class="menu__close" width="40" height="40">
+                  <use href="./images/icons.svg#icon-close-menu"></use>
+                </svg>
+            </button>
 
+            <!-- Mobail-menu-navigations -->
+            <nav class="menu-navigations">
+            <ul class="menu-navigations__list">
+                <li class="menu-navigations__item">
+                    <a class="menu-navigations__link menu-navigations__link--current" href="./index.html">Студія</a>
+                </li>
+                <li class="menu-navigations__item">
+                    <a class="menu-navigations__link" href="./portfolio.html">Портфоліо</a>
+                </li>
+                <li class="menu-navigations__item">
+                    <a class="menu-navigations__link" href="#">Контакти</a>
+                </li>
+            </ul>
+            </nav>
+
+            <!-- Mobali-menu-contacts -->
+        <ul class="menu-contacts__list">
+            <li class="menu-contacts__item">
+                <a class="menu-contacts__link" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+            <li class="menu-contacts__item">
+                <a class="menu-contacts__link" href="mailto:info@devstudio.com" lang="en">info@devstudio.com</a>
+            </li>
+        </ul>
+
+        <!-- Mobail-menu-socials -->
+        <ul class="menu-socials__list">
+            <li class="menu-socials__item">
+                <a class="menu-socials__link" href="https://www.instagram.com/" target="_blank"
+                    rel="noopener  nofollow  noreferrer">
+                    Instagram
+                </a>
+            </li>
+        
+            <li class="menu-socials__item">
+                <a class="menu-socials__link" href="https://twitter.com/" target="_blank"
+                    rel="noopener  nofollow  noreferrer">
+                    Twitter
+                </a>
+            </li>
+        
+            <li class="menu-socials__item">
+                <a class="menu-socials__link" href="https://www.facebook.com/" target="_blank"
+                    rel="noopener  nofollow  noreferrer">
+                    Facebook
+                </a>
+            </li>
+        
+            <li class="menu-socials__item">
+                <a class="menu-socials__link" href="https://www.linkedin.com/" target="_blank"
+                    rel="noopener  nofollow  noreferrer">
+                    LinkedIn
+                </a>
+            </li>
+        </ul>
+        </div>
 
         <script src="./js/modal.js"></script>
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+            integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+            crossorigin="anonymous"></script>
+        <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

@@ -6,6 +6,27 @@
 }
 
 .footer-container {
-    display: flex;
-    align-items: baseline;
+    @media screen and (max-width: 1198.99px) {
+        text-align: center;
+    }
+    
+
+    @media screen and (min-width:768px) and (max-width:1198.99px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: baseline;
+    }
+
+    @media screen and (min-width:1200px) {
+        display: flex;
+        justify-content: baseline;
+        align-items: baseline;
+    }
+}
+
+.footer__flex {
+     @media screen and (min-width:768px) and (max-width:1198.99px) {
+        flex-basis: 50%;
+    }
 }

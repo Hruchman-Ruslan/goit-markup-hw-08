@@ -1,4 +1,8 @@
 .work {
+     @media screen and (min-width:360px) and (max-width:1198.99px) {
+        display: none;
+    }
+
     @include section;
 }
 

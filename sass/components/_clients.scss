@@ -1,8 +1,11 @@
 .clients {
+    display: none;
     @include section;
 }
 
 .clients__title {
+    margin-bottom: 30px;
+    
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -10,25 +13,41 @@
     letter-spacing: 0.03em;
     color: var(--secondary--color);
 
-    margin-bottom: 50px;
+    @media screen and (min-width:1200px) {
+        margin-bottom: 50px;
+    }
 }
 
 .clients__list {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
+    flex-wrap: wrap;
 
-    margin: 0;
-    padding: 0;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    gap: 30px;
+}
+
+.clients__item {
+    flex-basis: calc((100% - (30px)) / 2);
+
+    @media screen and (min-width:768px) and (max-width:1198.99px) {
+        flex-basis: calc((100% - (90px)) / 3);
+    }
+
+    @media screen and (min-width:1200px) {
+        flex-basis: calc((100% - (30px * 5)) / 6);
+    }
 }
 
 .clients__link {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
-    height: 92px;
+
+    padding: 16px;
+    width: 100%;
+
 
     border: 1px solid var(--color--icons);
     border-radius: 4px;
