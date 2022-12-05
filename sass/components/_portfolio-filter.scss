@@ -1,21 +1,29 @@
 .portfolio-filter__list {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 8px;
+    row-gap: 15px;
+    
+    margin-bottom: 40px;
 
-    margin-bottom: 34px;
+     @media screen and (min-width:768px) {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 34px;
+    }
 }
 
 .portfolio-filter__item {
     background: var(--bgr-button-portfolio);
-    margin-right: 8px;
+    // margin-right: 8px;
 
-    &:last-child {
-        margin-right: 0;
-    }
+    // &:last-child {
+    //     margin-right: 0;
+    // }
 }
 
 .portfolio-filter__btn {
-    padding: 6px 22px;
+    padding: 6px 26px;
 
     font-family: inherit;
     font-weight: 500;
@@ -35,5 +43,9 @@
         background: var(--bgr--button);
         color: var(--color--button--portfolio);
         box-shadow: var(--portfolio--btn--shadow);
+    }
+
+     @media screen and (min-width:768px) {
+        padding: 6px 24px;
     }
 }

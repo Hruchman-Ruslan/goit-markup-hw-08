@@ -1300,22 +1300,32 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 34px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
+  row-gap: 15px;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-filter__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 34px;
+  }
 }
 
 .portfolio-filter__item {
   background: var(--bgr-button-portfolio);
-  margin-right: 8px;
-}
-.portfolio-filter__item:last-child {
-  margin-right: 0;
 }
 
 .portfolio-filter__btn {
-  padding: 6px 22px;
+  padding: 6px 26px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -1337,6 +1347,11 @@ a {
   -webkit-box-shadow: var(--portfolio--btn--shadow);
           box-shadow: var(--portfolio--btn--shadow);
 }
+@media screen and (min-width: 768px) {
+  .portfolio-filter__btn {
+    padding: 6px 24px;
+  }
+}
 
 .portfolio-card__list {
   display: -webkit-box;
@@ -1344,16 +1359,17 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-right: calc(-1 * var(--card--set--gap));
-  margin-bottom: calc(-1 * var(--card--set--gap));
+  gap: 30px;
 }
 
 .portfolio-card__item {
-  -ms-flex-preferred-size: calc((100% - 3 * var(--card--set--gap)) / 3);
-      flex-basis: calc((100% - 3 * var(--card--set--gap)) / 3);
-  margin-right: var(--card--set--gap);
-  margin-bottom: var(--card--set--gap);
   background: var(--background--color);
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .portfolio-card__item {
+    -ms-flex-preferred-size: calc(100% - 0px)/2;
+        flex-basis: calc(100% - 0px)/2;
+  }
 }
 
 .portfolio-card__thumb {
@@ -1411,6 +1427,13 @@ a {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--secondary--color);
+}
+@media screen and (min-width: 768px) {
+  .portfolio-card__title {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 2;
+  }
 }
 
 .portfolio-card__text {
