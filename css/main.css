@@ -1365,10 +1365,16 @@ a {
 .portfolio-card__item {
   background: var(--background--color);
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .portfolio-card__item {
-    -ms-flex-preferred-size: calc(100% - 0px)/2;
-        flex-basis: calc(100% - 0px)/2;
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-card__item {
+    -ms-flex-preferred-size: calc(33.333% - 30px);
+        flex-basis: calc(33.333% - 30px);
   }
 }
 
