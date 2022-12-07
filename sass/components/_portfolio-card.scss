@@ -10,7 +10,7 @@
     }
 
     @media screen and (min-width:1200px) {
-        flex-basis: calc(33.333% - 30px);
+        flex-basis: calc((100% - 90px) / 3);
     }
 
     background: var(--background--color);
