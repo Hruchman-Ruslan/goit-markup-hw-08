@@ -596,12 +596,6 @@ a {
           box-shadow: var(--team--shadow);
   border-radius: 0px 0px 4px 4px;
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .team__item {
-    -ms-flex-preferred-size: calc(100% - 0px)/1;
-        flex-basis: calc(100% - 0px)/1;
-  }
-}
 @media screen and (min-width: 768px) and (max-width: 1198.98px) {
   .team__item {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
