@@ -58,11 +58,6 @@ body {
   color: var(--primary--color);
 }
 
-body.backdrop,
-body.is-open {
-  overflow: hidden;
-}
-
 h1,
 h2,
 h3,
