@@ -3,3 +3,8 @@ body {
     background: var(--background--color);
     color: var(--primary--color);
 }
+
+body.backdrop,
+body.is-open {
+    overflow: hidden;
+}
