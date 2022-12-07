@@ -1458,8 +1458,8 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .portfolio-card__item {
-    -ms-flex-preferred-size: calc((100% - 90px) / 3);
-        flex-basis: calc((100% - 90px) / 3);
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
   }
 }
 
