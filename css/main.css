@@ -755,6 +755,8 @@ a {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
+  margin-right: auto;
+  margin-left: auto;
   background: var(--background--footer);
 }
 
@@ -995,7 +997,12 @@ a {
 
 .footer-form__email {
   display: block;
-  width: 450px;
+  max-width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .footer-form__email {
+    min-width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer-form__email {
@@ -1106,7 +1113,7 @@ a {
   top: 50%;
   left: 50%;
   padding: 40px;
-  width: 450px;
+  min-width: 450px;
   height: 609px;
   background: var(--background--color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1121,8 +1128,8 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .modal {
-    min-width: 528px;
-    min-height: 581px;
+    width: 528px;
+    height: 581px;
   }
 }
 

@@ -29,7 +29,11 @@
 
 .footer-form__email {
     display: block;
-    width: 450px;
+    max-width: 450px;
+
+    @media screen and (min-width:768px) {
+        min-width: 450px;        
+    }
 
     @media screen and (min-width:1200px) {
         margin-right: 12px;
